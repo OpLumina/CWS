@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6; /* Light background for the page */
+}
+
+/* Container for Centering Content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50; /* Dark blue/grey */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+}
+
+/* Navigation Styling */
+nav ul.main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use Flexbox for navigation */
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+nav ul.main-nav li {
+    margin: 0 15px;
+}
+
+nav ul.main-nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul.main-nav li a:hover,
+nav ul.main-nav li a:focus {
+    background-color: #34495e; /* Slightly lighter dark blue/grey */
+}
+
+nav ul.main-nav li a[aria-current="page"] {
+    background-color: #1a50bc; /* Teal for the current page */
+    font-weight: bold;
+}
+/* Pricing Page Specific Styling */
+.pricing-section {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.8;
+}
+
+.pricing-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 0 auto 40px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card h3 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.pricing-card .price {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #77aaff;
+    margin-bottom: 10px;
+}
+
+.pricing-card .unit {
+    font-size: 1.2rem;
+    color: #666;
+    display: block; /* Place "per hour" on a new line if desired */
+}
+
+.pricing-card p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.pricing-card li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+}
+
+.pricing-card li:last-child {
+    border-bottom: none;
+}
+
+.affordability-statement {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+    background: #e6f0ff; /* Light blue background */
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 5px solid #77aaff;
+}
+
+.affordability-statement h3 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.affordability-statement p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+.faq-section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h4 {
+    color: #77aaff;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design (Media Queries) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header nav {
+        float: none;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    header li {
+        padding: 0 10px;
+        display: block; /* Stack nav items vertically on small screens */
+        margin-bottom: 5px;
+    }
+
+    header a {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .pricing-card {
+        padding: 20px;
+    }
+
+    .pricing-card .price {
+        font-size: 3rem;
+    }
+
+    .pricing-card .unit {
+        font-size: 1rem;
+    }
+}
